@@ -35,7 +35,7 @@ export class ClienteService {
 
         return clientes.map((cliente) => {
           cliente.nombre = cliente.nombre.toUpperCase();
-          //cliente.apellido = cliente.apellido.toUpperCase();
+          cliente.apellido = cliente.apellido.toUpperCase();
 
           let datePipe = new DatePipe('es');
           // cliente.fecha = datePipe.transform(cliente.fecha,'fullDate');
